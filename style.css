@@ -1,0 +1,69 @@
+body {
+    margin: 0px;
+    /* background-color: rgb(177, 76, 76); */
+}
+header {
+    border: 1em;
+    background-color: cadetblue;
+    height: 100px;
+    width: 600px;
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+.face {
+    background-color: red;
+    /*
+    margin-top: 0px;
+    margin-left: 300px;
+    margin-right: 300px;
+    max-width: 500px;
+    align-self: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    */
+
+}
+.container{
+    display: flex;
+    border: 1em;
+    /* outline: dashed 2px black; */
+    height: 400px;
+    width: 900px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    max-width: 1000px;
+    margin-left: 600px;
+    margin-top: 20px;
+}
+.grid-container{
+    /* padding: 3.75%; */
+    display: grid;
+    height: 700px;
+    width: 1000px;
+    grid-template-columns: 100%;
+    background-color: #e8e5e5;
+    /* margin: 20px 200px 20px 300px; */
+  }
+.colors {
+    margin: 10 auto;
+    padding: 10px;
+    max-width: 200px;
+}
+.btn {
+    border: none;
+    height: 50px;
+    width: 50px;
+    margin: 0 auto;
+}
+
+.btn.red    { background-color: #EA3546; }
+.btn.orange { background-color: #F86624; }
+.btn.yellow { background-color: #F9C80E; }
+.btn.green  { background-color: #64C956; }
+.btn.blue   { background-color: #1BE0FA; }
+.btn.purple { background-color: #662E9B; }

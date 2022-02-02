@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Etch-a-Sketch</title>
+</head>
+<body>
+    <header><!--the face of the etch a sketch-->
+    <div class ="face">ETCH A SKETCH</div>
+    </header>
+    <div class = 'flex'>
+        <button class = "reset">Reset</button> <!--allows you to reset the etch-a-sketch-->
+       
+    </div>
+    <!-- the grid-->
+    <div class="container">
+    
+        <div class = "colors">
+            <button class="btn red" onclick="color('red')"></button>
+            <button class="btn orange" onclick="color('orange')"></button>
+            <button class="btn yellow" onclick="color('yellow')"></button>
+            <button class="btn green" onclick="color('green')"></button>
+            <button class="btn blue" onclick="color('blue')"></button>
+            <button class="btn purple" onclick="color('purple')"></button>
+        </div>
+        <div class = "grid-container"></div>
+    
+    </div>
+    <script src="etch.js"></script>
+  
+</body>
+</html>
+<!--
+
+things to work on :
+    aligning the elements towards the center
+    adding a round frame around the grid and face to give it a body
+    making the buttons and layout look more like a Pokemon game
+    giving functionality to the button `reset` CHECK 
+    allowing the grid number to changed by typing in a value
+    instead of hovering over, make it click and drag
+-->
