@@ -2,27 +2,55 @@ body {
     margin: 0px;
     /* background-color: rgb(177, 76, 76); */
 }
+@font-face {
+    font-family: GomaBlock;
+    src: url(GomaBlock-V1Bx.ttf);
+}
 header {
     border: 1em;
-    background-color: cadetblue;
+    /* background-color: rgb(30, 190, 196); */
     height: 100px;
     width: 600px;
     position: relative;
+    text-align: center;
+    font-family: GomaBlock,sans-serif;
+    font-size: 50px;
     margin: 0 auto;
-    padding-bottom: 10px;
+    padding-top: 50px;
+    padding-bottom: 0px;
 }
-.face {
-    background-color: red;
-    /*
-    margin-top: 0px;
-    margin-left: 300px;
-    margin-right: 300px;
-    max-width: 500px;
-    align-self: center;
-    margin-bottom: 20px;
-    padding: 20px;
-    */
-
+label {
+    font-family: GomaBlock,sans-serif;
+    font-size: 12px;
+}
+.reset {
+    border: none;
+    background-color: #ffffff;
+	color: #000000;
+	box-shadow: 3px 3px 0 #404040;
+	border: 2px solid #404040;
+    font-family: GomaBlock,sans-serif;
+}
+.reset:active {
+    background-color: #ceacd5dd;
+    box-shadow: none;
+    top: 7px;
+	left: 7px;
+  }
+.submit {
+    margin-left: 5px;
+    border: none;
+    background-color: #ffffff;
+	color: #000000;
+	box-shadow: 3px 3px 0 #404040;
+	border: 2px solid #404040;
+    font-family: GomaBlock,sans-serif;
+}
+.submit:active {
+        background-color: #ceacd5dd;
+        box-shadow: none;
+        top: 7px;
+	    left: 7px;
 }
 .container{
     display: flex;
@@ -31,13 +59,14 @@ header {
     height: 400px;
     width: 900px;
     margin: 0 auto;
+    padding-top: 40px;
 }
 .flex {
     display: flex;
-    gap: 50px;
+    gap: 40px;
     justify-content: center;
     max-width: 1000px;
-    margin-left: 600px;
+    margin-left: 300px;
     margin-top: 20px;
 }
 .grid-container{
@@ -46,7 +75,7 @@ header {
     height: 700px;
     width: 1000px;
     grid-template-columns: 100%;
-    background-color: #e8e5e5;
+    background-color: #f2eaf2;
     /* margin: 20px 200px 20px 300px; */
   }
 .colors {
@@ -59,8 +88,22 @@ header {
     height: 50px;
     width: 50px;
     margin: 0 auto;
-}
+	background: transparent;
+	padding: 10px 40px;
+	margin: 30px;
+	position: relative;
 
+	background-color: #404040;
+	color: #FFFFFF;
+	box-shadow: 7px 7px 0 #404040;
+	border: 3px solid #404040;
+}
+.btn:active {
+    /* background-color: #ceacd5dd; */
+    box-shadow: none;
+    top: 7px;
+    left: 7px;
+}
 .btn.red    { background-color: #EA3546; }
 .btn.orange { background-color: #F86624; }
 .btn.yellow { background-color: #F9C80E; }

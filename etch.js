@@ -3,7 +3,8 @@ let gridTextInput = document.querySelector('.xbyx');
 let input = 16;
 let changeGrid = document.querySelector('.change-grid');
 let reset = document.querySelector('.reset');
-
+let submit = document.querySelector('.submit');
+let inputtype = document.querySelector('input');
 reset.addEventListener('click', 
 
 		() => {
@@ -11,7 +12,12 @@ reset.addEventListener('click',
 		}
 
 )
-
+submit.addEventListener('click',
+		() => {
+			input = (inputtype.value);
+			createGrid();
+		}
+)
 const createGrid = () => {
 
     const numOfSquares = input * input;
